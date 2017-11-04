@@ -20,24 +20,40 @@
 			<body>
 				<table>
 					<tr>
-						<th>Country code</th>
-						<th>Name</th>
-						<th>Capital</th>
-						<th>Phone code</th>
+						<th>Title</th>
+						<th>Director</th>
+						<th>Actors</th>
+						<th>Release Year</th>
+						<th>Rating</th>
+						<th>Plot</th>
+						<th>Genre</th>
+						<th>Duration</th>
 					</tr>
-					<xsl:for-each select="countries/country">
+					<xsl:for-each select="movies/movie">
 							<tr>
 								<td>
-									<xsl:value-of select="Country_code"/>
+									<xsl:value-of select="Title"/>
 								</td>
 								<td>
-									<xsl:value-of select="Name"/>
+									<xsl:value-of select="Director"/>
 								</td>
 								<td>
-									<xsl:value-of select="Capital"/>
+									<xsl:value-of select="Actors"/>
 								</td>
 								<td>
-									<xsl:value-of select="Phone_code"/>
+									<xsl:value-of select="Release_Year"/>
+								</td>
+								<td>
+									<xsl:value-of select="Rating"/>
+								</td>
+								<td>
+									<xsl:value-of select="Plot"/>
+								</td>
+								<td>
+									<xsl:value-of select="Genre"/>
+								</td>
+								<td>
+									<xsl:value-of select="Duration"/>
 								</td>
 							</tr>
 					</xsl:for-each>
