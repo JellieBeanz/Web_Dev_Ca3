@@ -2,7 +2,7 @@
 <html lang="en" ng-app>
 
 <head>
-  <title>World Countries and Capitals</title>
+  <title>Best Movies</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
@@ -46,7 +46,7 @@
       </div>
     </div>
     <div class="page-header">
-      <h1>World Countries and Capitals</h1>
+      <h1>Top Movies</h1>
     </div>
     <div class="row">
       <div id="results" class="span8">
@@ -56,19 +56,28 @@
           <li>
             <form enctype='application/json' action="/post/json" method="post">
               <div class="field">
-                <input type="text" name="Country_code" placeholder="Country code">
+                <input type="text" name="Title" placeholder="Title">
               </div>
               <div class="field">
-                <input type="text" name="Region" placeholder="Region">
+                <input type="text" name="Director" placeholder="Director">
               </div>
               <div class="field">
-                <input type="text" name="Name" placeholder="Name">
+                <input type="text" name="Actors" placeholder="Actors">
               </div>
               <div class="field">
-                <input type="text" name="Capital" placeholder="Capital">
+                <input type="text" name="Release_Year" placeholder="Year of Release">
               </div>
               <div class="field">
-                <input type="text" name="Phone_code" placeholder="Phone code">
+                <input type="text" name="Rating" placeholder="Rating">
+              </div>
+              <div class="field">
+                <input type="text" name="Plot" placeholder="Plot">
+              </div>
+              <div class="field">
+                <input type="text" name="Genre" placeholder="Genre">
+              </div>
+              <div class="field">
+                <input type="text" name="Duration" placeholder="Duration">
               </div>
               <div class="field">
                 <button type="submit">Submit</button>
