@@ -10,4 +10,24 @@
         <Genre>Action</Genre>
         <Duration>2h</Duration>
     </movie>
+    <movie>
+          <Title>test</Title>
+          <Director>yuuup</Director>
+          <Actors>Afgan </Actors>
+          <Release_Year>2011</Release_Year>
+          <Rating>00</Rating>
+          <Plot>butts </Plot>
+          <Genre>rom com </Genre>
+          <Duration>butt soup</Duration>
+      </movie>
+    <movie>
+          <Title>AF</Title>
+          <Director>AS</Director>
+          <Actors>Afghanistan</Actors>
+          <Release_Year>2017</Release_Year>
+          <Rating>93</Rating>
+          <Plot>Dude </Plot>
+          <Genre>Action</Genre>
+          <Duration>2h</Duration>
+      </movie>
 </movies>
