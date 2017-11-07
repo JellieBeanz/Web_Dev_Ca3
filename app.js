@@ -23,8 +23,8 @@ router.get('/get/html', function(req, res) {
   
     res.writeHead(200, { 'Content-Type': 'text/html' });
     
-    var docSource = fs.readFileSync('Countries.xml', 'utf8');
-    var stylesheetSource = fs.readFileSync('Countries.xsl', 'utf8');
+    var docSource = fs.readFileSync('movies.xml', 'utf8');
+    var stylesheetSource = fs.readFileSync('movies.xsl', 'utf8');
     
     var doc = libxslt.libxmljs.parseXml(docSource);
     var stylesheet = libxslt.parse(stylesheetSource);
@@ -60,7 +60,7 @@ router.post('/post/json', function(req, res) {
     var XMLformated = js2xmlparser.parse("countries", JSON.parse(JSONformated));
 
     // Write the resulting XML back to the system
-    fs.writeFileSync('Countries.xml', XMLformated);
+    fs.writeFileSync('movies.xml', XMLformated);
 
   }
 
